@@ -6,6 +6,9 @@
  "engine": "InnoDB",
  "field_order": [
   "paid_by",
+  "column_break_npkb",
+  "split_method",
+  "section_break_hndf",
   "splits",
   "section_break_zkqw",
   "date",
@@ -35,7 +38,8 @@
   {
    "default": "Today",
    "fieldname": "section_break_zkqw",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "data"
   },
   {
    "default": "Today",
@@ -87,13 +91,30 @@
    "fieldname": "splits",
    "fieldtype": "Table",
    "label": "Splits",
-   "options": "Expense Split"
+   "options": "Expense Split",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_npkb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Equally",
+   "fieldname": "split_method",
+   "fieldtype": "Select",
+   "label": "Split Method",
+   "options": "Equally\nManual",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_hndf",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-10-05 14:06:03.619341",
+ "modified": "2024-10-05 15:18:58.999470",
  "modified_by": "Administrator",
  "module": "Batwara",
  "name": "Expense",

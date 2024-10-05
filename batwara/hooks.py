@@ -5,8 +5,11 @@ app_description = "simple & open source Splitwise Alternative"
 app_email = "m222ragab@gmail.com"
 app_license = "mit"
 
+export_python_type_annotations = True
+
 # Apps
 # ------------------
+
 
 # required_apps = []
 
